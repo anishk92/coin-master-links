@@ -84,6 +84,8 @@ color:#38bdf8;
 text-decoration:none;
 }
 
+/* container */ .spin-alert-box{ background:#020617; padding:18px; border-radius:12px; margin:25px 0; border:1px solid #334155; font-family:Arial, sans-serif; } /* channel row */ .channel-row{ display:flex; align-items:center; justify-content:space-between; background:#000; padding:12px; border-radius:10px; margin-top:12px; transition:all .25s ease; } .channel-row:hover{ transform:translateY(-2px); box-shadow:0 4px 15px rgba(0,0,0,0.4); } /* icon */ .channel-icon{ width:32px; height:32px; } /* left side */ .channel-left{ display:flex; align-items:center; gap:10px; } /* join button */ .join-btn{ padding:7px 16px; border-radius:20px; color:#fff; text-decoration:none; font-weight:600; font-size:13px; animation:pulseBtn 2s infinite; } /* whatsapp style */ .whatsapp{ border:1px solid #25D366; } .whatsapp .join-btn{ background:#25D366; } /* telegram style */ .telegram{ border:1px solid #229ED9; } .telegram .join-btn{ background:#229ED9; } /* pulse animation */ @keyframes pulseBtn{ 0%{box-shadow:0 0 0 0 rgba(37,211,102,0.6)} 70%{box-shadow:0 0 0 10px rgba(37,211,102,0)} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0)} }
+
 </style>
 
 </head>
@@ -102,109 +104,7 @@ Daily updated Coin Master reward links and free spins
 
 </header>
 
-```html
-<div style="
-background:#020617;
-padding:18px;
-border-radius:12px;
-margin:25px 0;
-border:1px solid #334155;
-">
-
-<h3 style="margin-top:0;">📢 Get Daily Spin Alerts</h3>
-
-<p style="color:#94a3b8; font-size:14px;">
-Join our channels to get Coin Master free spins instantly.
-</p>
-
-
-<!-- WhatsApp -->
-<div style="
-display:flex;
-align-items:center;
-justify-content:space-between;
-background:#000;
-border:1px solid #25D366;
-padding:10px 12px;
-border-radius:8px;
-margin-bottom:12px;
-">
-
-<div style="display:flex; align-items:center; gap:10px;">
-<span style="font-size:20px;">🟢</span>
-
-<div>
-<div style="font-size:12px;color:#94a3b8;">
-WhatsApp Channel
-</div>
-
-<div style="font-size:14px;font-weight:bold;">
-Daily Spin Alerts
-</div>
-</div>
-</div>
-
-<a href="https://whatsapp.com/channel/0029VbCVMkT5Ejy0gxHdiV0p"
-target="_blank"
-style="
-background:#25D366;
-color:#fff;
-padding:6px 14px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-font-weight:bold;
-">
-Join
-</a>
-
-</div>
-
-
-<!-- Telegram -->
-<div style="
-display:flex;
-align-items:center;
-justify-content:space-between;
-background:#000;
-border:1px solid #229ED9;
-padding:10px 12px;
-border-radius:8px;
-">
-
-<div style="display:flex; align-items:center; gap:10px;">
-<span style="font-size:20px;">🔵</span>
-
-<div>
-<div style="font-size:12px;color:#94a3b8;">
-Telegram Channel
-</div>
-
-<div style="font-size:14px;font-weight:bold;">
-Free Spins Updates
-</div>
-</div>
-</div>
-
-<a href="https://t.me/CoinMasterFreeSpinsDaily"
-target="_blank"
-style="
-background:#229ED9;
-color:#fff;
-padding:6px 14px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-font-weight:bold;
-">
-Join
-</a>
-
-</div>
-
-</div>
-```
-
+<div class="spin-alert-box"> <h3 style="margin-top:0;">📢 Get Daily Spin Alerts</h3> <p style="color:#94a3b8; font-size:14px;"> Join our channels to get Coin Master free spins instantly. </p> <!-- WhatsApp --> <div class="channel-row whatsapp"> <div class="channel-left"> <img class="channel-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> <div> <div style="font-size:12px;color:#94a3b8;"> WhatsApp Channel </div> <div style="font-size:14px;font-weight:bold;color:#fff;"> Daily Spin Alerts </div> </div> </div> <a class="join-btn" href="https://whatsapp.com/channel/0029VbCVMkT5Ejy0gxHdiV0p" target="_blank"> Join </a> </div> <!-- Telegram --> <div class="channel-row telegram"> <div class="channel-left"> <img class="channel-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"> <div> <div style="font-size:12px;color:#94a3b8;"> Telegram Channel </div> <div style="font-size:14px;font-weight:bold;color:#fff;"> Free Spins Updates </div> </div> </div> <a class="join-btn" href="https://t.me/CoinMasterFreeSpinsDaily" target="_blank"> Join </a> </div> </div>
 
 <div class="card">
 
